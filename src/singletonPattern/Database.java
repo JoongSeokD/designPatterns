@@ -1,4 +1,4 @@
-package singletonPattern.case1.step1;
+package singletonPattern;
 
 public class Database {
 	private static Database singleton = new Database("products");

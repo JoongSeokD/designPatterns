@@ -1,4 +1,4 @@
-package singletonPattern.case1.step1;
+package singletonPattern;
 
 public class TestPattern2 {
 	
