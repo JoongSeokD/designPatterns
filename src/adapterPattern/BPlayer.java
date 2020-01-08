@@ -1,6 +1,6 @@
 package adapterPattern;
 
-public interface BPlayer {
-	void playFile(String fileName);
-	void stop();
+public abstract class BPlayer {
+	public abstract void playFile(String fileName);
+	public abstract void stop();
 }

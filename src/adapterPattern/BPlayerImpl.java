@@ -1,6 +1,6 @@
 package adapterPattern;
 
-public class BPlayerImpl implements BPlayer{
+public class BPlayerImpl extends BPlayer{
 
 	@Override
 	public void stop() {
