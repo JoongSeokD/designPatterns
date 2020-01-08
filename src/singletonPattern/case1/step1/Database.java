@@ -1,13 +1,11 @@
 package singletonPattern.case1.step1;
 
 public class Database {
-	private static Database singleton;
+	private static Database singleton = new Database("products");
 	
 	private String name;
 
 	private Database(String name) {
-//		super();
-//		this.name = name;
 		try {
 			Thread.sleep(100);
 			this.name = name;
@@ -16,10 +14,7 @@ public class Database {
 		
 	}
 
-	public synchronized static Database getInstance(String name) {
-		if (singleton == null) {
-			singleton = new Database(name);
-		}
+	public  static Database getInstance(String name) {
 		return singleton;
 	}
 	
